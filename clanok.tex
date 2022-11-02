@@ -17,7 +17,7 @@
 
 \title{Problematika tvorby uveriteľných herných postáv v hernom prostredí \thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2022/23, vedenie: MSc. Mirwais Ahmadzai}} % meno a priezvisko vyučujúceho na cvičeniach
 
-\author{Petrik Boržík\\[3pt]
+\author{Patrik Boržík\\[3pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
 	{\small Fakulta informatiky a informačných technológií}\\
 	{\small \texttt{xborzik@stuba.sk}}
@@ -32,101 +32,49 @@
 \maketitle
 
 \begin{abstract}
-Hey there
-\ldots
+Cieľom článku je sa zamerať na tvorbu herných postáv, ktoré sú označované ako NPC, teda none-player character - postavy, ktoré sú staticky/dynamicky dané v priestore herného sveta a interagujú s hráčom alebo inou formou s herným svetom. V presnejšej škále sa chcem zamerať na spôsob tvorenia postavy špecifickým procesom, kde výsledná postava má všetky prvky nastavené tak, že pôsobí dôveryhodne a autenticky. Hovoriac špecificky o vzhľade postavy, audiovizuálnom spracovaní, charakterových a povahových aspektoch, umiestnenia postavy do hry a taktiež by som sa zameral na tvorbu zázemia postavy alebo príbehu pre danú postavu. Rovnako tak, by som sa venoval dôležitosti postavy v hernom svete a aká je spojitosť herného sveta a herných postáv, kde by som vyznačil dôležité skutočnosti a prvky herného sveta, ktoré sa úzko viažu s hráčom a hernými postavami.
 \end{abstract}
 
 
 
 \section{Úvod}
-V rámci nášho článku sa venujeme problematike tvorby herných postáv, ktorá je jedna z kľúčových aspektov moderného herného zážitku, ktorý je aplikovateľný v každom jednom žánri video-herného priemyslu. Dôležitosť herných nehráčskych postáv tzv. NPC je na úrovní korporátnej výroby kvalitných hier označovaná vysokou prioritou tvorby v rámci hernej štruktúry po grafickej, ale aj softvérovej stránke – na základe faktu, že aspekt herných postáv aktívne preniká do viacerých vedných oblastí priemyslu, považujeme danú problematiku za prioritnú, pre vytvorenie jednotného riešenia tejto tvorby. V rámci základných pojmov sa venujeme bližšie jednoduchým vysvetleniam a definíciám, o ktoré sa článok opiera a často využíva, v časti 2 a podkapitole s označením 2.1 . Následne sa sústreďujeme na všeobecné aspekty herných postáv v 3.časti, kde ich všeobecne popisujeme a následne detailnejšie rozoberáme v podkapitolách 3.1, 3.2 a 3.3. Taktiež sa venujeme týmto jednotlivým prvkom ako celku, z dôvodu, že následne našim cieľom je vytvoriť systém, ktorého výstup je istý dynamický proces, ktorý konštante platí pre tvorbu herných postáv v širokej škále využitia v hernom priemysle. 
+V rámci nášho článku sa venujeme problematike tvorby herných postáv, ktorá je jedna z kľúčových aspektov moderného herného zážitku, ktorý je aplikovateľný v každom jednom žánri video-herného priemyslu. Dôležitosť herných nehráčskych postáv tzv. NPC je na úrovní korporátnej výroby kvalitných hier označovaná vysokou prioritou tvorby v rámci hernej štruktúry po grafickej, ale aj softvérovej stránke – na základe faktu, že aspekt herných postáv aktívne preniká do viacerých vedných oblastí priemyslu, považujeme danú problematiku za prioritnú, pre vytvorenie jednotného riešenia tejto tvorby. V rámci základných pojmov sa venujeme bližšie jednoduchým vysvetleniam a definíciám, o ktoré sa článok opiera a často využíva, v časti 2 a podkapitole s označením 2.1 . Následne sa sústreďujeme na všeobecné aspekty herných postáv v 3.časti, kde ich všeobecne popisujeme a následne detailnejšie rozoberáme v podkapitolách ~\ref{3.0:3.1} a ~\ref{3.0:3.2} . Taktiež sa venujeme týmto jednotlivým prvkom ako celku, z dôvodu, že následne našim cieľom je vytvoriť systém, ktorého výstup je istý dynamický proces, ktorý konštante platí pre tvorbu herných postáv v širokej škále využitia v hernom priemysle.
+%\\ref{nejaka}.
+%\Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} %\a~\ref{dolezitejsia}.
+%\Záverečné poznámky prináša ~\ref{zaver}.
 
 
 
+%\\section{Nejaká časť} \label{nejaka}
 
+%\Z obr.~\ref{f:rozhod} je všetko jasné. 
 
-
-Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
-
-Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
-Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
-Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
-Záverečné poznámky prináša ~\ref{zaver}.
-
-
-
-\section{Nejaká časť} \label{nejaka}
-
-Z obr.~\ref{f:rozhod} je všetko jasné. 
-
-\begin{figure*}[tbh]
-\centering
+%\ \begin{figure*}[tbh]
+%\\centering 
 %\includegraphics[scale=1.0]{diagram.pdf}
-Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak. https://github.com/PatrikBorzik2426/MIP_clanok.githttps://github.com/PatrikBorzik2426/MIP_clanok.githttps://github.com/PatrikBorzik2426/MIP_clanok.git \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
-\caption{Rozhodujúci argument.}
-\label{f:rozhod}
-\end{figure*}
+%\Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak. https://github.com/PatrikBorzik2426/MIP_clanok.githttps://github.com/PatrikBorzik2426/MIP_clanok.githttps://github.com/PatrikBorzik2426/MIP_clanok.git \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
+%\\caption{Rozhodujúci argument.}
+%\\label{f:rozhod}
+%\\end{figure*}
 
 
 
 \section{Čo je herný svet} \label{2.0}
-V rámci definície tohto pojmu vychádzame z teórie, že ide o simulované prostredie, ktoré napodobňuje reálnu alebo fiktívnu fyzickú scenériu priestoru. Teda vo video-hernom priemysle ide o akési ohraničenie priestoru pre hráča. Herný svet ako taký pôsobí veľmi samostatne a nezávisle, avšak opak je pravdou. Hlavnou úlohou sveta je síce dávať isté hranice hráčovi, ale taktiež slúži ako základná vrstva pre obsahovú časť hry, teda zadáva isté špecifikácie o akú dobú sa jedná, v akej politicko-sociálnej situácií sa daný príbeh hry odohráva a hlavne dedikovane vytvára priestor pre tvorbu NPC (non-player characters). Zadáva možnosti zázemia, z ktorého dané postavy môžu pochádzať. Tento pevný základ, ktorý je priamym dôkazom interakcií medzi herným svetom a hernými postavami,  je taktiež aj prvý stavebný kameň, ktorý slúži dizajnérovi herných postáv na vytvorenie dôveryhodnej hernej postavy. Samozrejme tento vzájomný vzťah medzi daným herným svetom a postavou nie je jednosmerný, ale funguje na báze akejsi symbiózy či jednoduchej analógie – t.j. istá rovnosť, ktorá hovorí o tom, že na vytvorenie dôveryhodného herného sveta je potrebné vytvoriť dôveryhodné herné postavy a naopak. Teda herný svet ako taký je zdrojom možností pre úplný základ tvorby herných postáv. V dnešnej dobe sa stretávame pri korporátne a komerčne tvorených hrách zo svetom, ktorý je limitovaný v rámci tvorivosti úplne minimálne. Tento moderný aspekt umožňuje dizajnérom postáv pracovať s enormným obsahom, ktorý avšak nadobúda limity, ktoré sú dané hlavne žánrom. Toto zabezpečuje to, že postava musí byť korešpondujúca tematikou k svetu, v ktorom sa nachádza.
+V rámci definície tohto pojmu vychádzame z teórie, že ide o simulované prostredie, ktoré napodobňuje reálnu alebo fiktívnu fyzickú scenériu priestoru.\cite{FacesOfRP:MPD} Teda vo video-hernom priemysle ide o akési ohraničenie priestoru pre hráča. Herný svet ako taký pôsobí veľmi samostatne a nezávisle, avšak opak je pravdou. Hlavnou úlohou sveta je síce dávať isté hranice hráčovi, ale taktiež slúži ako základná vrstva pre obsahovú časť hry, teda zadáva isté špecifikácie o akú dobú sa jedná, v akej politicko-sociálnej situácií sa daný príbeh hry odohráva a hlavne dedikovane vytvára priestor pre tvorbu NPC (non-player characters). Zadáva možnosti zázemia, z ktorého dané postavy môžu pochádzať. Tento pevný základ, ktorý je priamym dôkazom interakcií medzi herným svetom a hernými postavami,  je taktiež aj prvý stavebný kameň, ktorý slúži dizajnérovi herných postáv na vytvorenie dôveryhodnej hernej postavy. Samozrejme tento vzájomný vzťah medzi daným herným svetom a postavou nie je jednosmerný, ale funguje na báze akejsi symbiózy či jednoduchej analógie – t.j. istá rovnosť, ktorá hovorí o tom, že na vytvorenie dôveryhodného herného sveta je potrebné vytvoriť dôveryhodné herné postavy a naopak. Teda herný svet ako taký je zdrojom možností pre úplný základ tvorby herných postáv. V dnešnej dobe sa stretávame pri korporátne a komerčne tvorených hrách zo svetom, ktorý je limitovaný v rámci tvorivosti úplne minimálne. Tento moderný aspekt umožňuje dizajnérom postáv pracovať s enormným obsahom, ktorý avšak nadobúda limity, ktoré sú dané hlavne žánrom. Toto zabezpečuje to, že postava musí byť korešpondujúca tematikou k svetu, v ktorom sa nachádza.
 
 \subsection{Čo je herná postava}\label{2.0:2.1}
 Už vyššie spomínané prepojenie sveta s fiktívnou postavou určitým spôsobom predchádza samotnú definíciu. Postavy sú jedným z priamych prvkov vďaka, ktorým môžu hráči nadobúdať schopnosť interakcií s herným svetom. Definovateľnosť postavy ako takej je relatívne nedosiahnuteľná, pretože každá z postáv je často veľmi špecifická alebo naopak potom kvantitatívne tvorená na vyplnenie sveta. Všeobecne by sme mohli definovať postavy ako jedincov, ktorý majú špecifický zmysel v danom hernom svete a špecifické miesto v danom hernom svete. Správne vytvorená postava nepriamo podporuje tvorivosť hráčov a necháva sa ovplyvniť rozhodnutiami hráčov či aj nimi samými – to platí o postavách hráčov, ale aj o postavách príbehových. Postavy by mali nadobúdať nové vlastnosti či schopnosti zároveň s hráčom samotným – v istých prípadoch postava získava skúsenosti a schopnosti lineárne a niekedy má dané schopnosti pevne fixované, využitie tejto vlastnosti je veľmi variabilné.  Ide o neodmysliteľný aspekt herného zážitku. Napriek tomu, že ide o kľúčový prvok vo všeobecnosti existuje viacero spôsobov, ako vytvoriť hernú postavu „správne“. Nepravidelnosť alebo nekonštantnosť postupov zväčša vychádza z faktu, že ide o veľmi kreatívny proces, kde tvorca tvorí na základe osobných preferencií a aj preto priorizuje isté aspekty postáv pred inými. Následkom tohto diania je taktiež jedinečnosť postáv. Často sa stáva, že dvaja rôzny autori sa inšpirujú na základe rovnakej predlohy, avšak výsledné produkty sa často líšia.
 
 \section{Všeobecné aspekty herných postáv} \label{3.0}
-Herná postava odzrkadľuje a simuluje určitú osobu, ktorá by v čistej teórií mohla existovať aj v realite, avšak s tým, že herné postavy sú tvorené s určitým zámerom, ktorý význačne apeluje na proces a aj jednotlivé prvky postáv. Vo všeobecnosti tieto aspekty postáv môžeme definovať na viacerých úrovniach, avšak najbežnejšia kategorizácia týchto prvkov je na vizuálnu a povahovú. Samozrejme, že v rámci hĺbky a komplexnosti jednotlivých postáv sa tieto kategórie rozvetvujú až do najmenších detailov. Pri tvorbe sa vždycky vychádza z verejnej mienky o reálnych postavách, ktoré sa potom zrkadlia na fiktívne (herné) postavy. Ako oporné body slúžia zväčša isté stereotypy, ktoré vyvolajú okamžitý reflex v danom hráčovi pri interakcií s danou postavou. Mozog pri prijatí istých informácií o vzhľade postavy a o jej povahových vlastnostiach automaticky kategorizuje postavu a vie odhadnúť  či sedí do danej situácie alebo prostredia, v ktorom sa momentálne nachádza.  Preto základom je vychádzať zo známych konceptov, ktoré sa v rámci spoločnosti používajú už roky. V dnešnej dobe sa stretávajú dizajnéri s prekážkou, ktorá diktuje akúsi politicko-korektnú formu postáv, kde sa tieto stereotypy potláčajú. 
+Herná postava odzrkadľuje a simuluje určitú osobu, ktorá by v čistej teórií mohla existovať aj v realite, avšak s tým, že herné postavy sú tvorené s určitým zámerom, ktorý význačne apeluje na proces a aj jednotlivé prvky postáv. Vo všeobecnosti tieto aspekty postáv môžeme definovať na viacerých úrovniach, avšak najbežnejšia kategorizácia týchto prvkov je na vizuálnu a povahovú. Samozrejme, že v rámci hĺbky a komplexnosti jednotlivých postáv sa tieto kategórie rozvetvujú až do najmenších detailov. Pri tvorbe sa vždycky vychádza z verejnej mienky o reálnych postavách, ktoré sa potom zrkadlia na fiktívne (herné) postavy. Ako oporné body slúžia zväčša isté stereotypy, ktoré vyvolajú okamžitý reflex v danom hráčovi pri interakcií s danou postavou. Mozog pri prijatí istých informácií o vzhľade postavy a o jej povahových vlastnostiach automaticky kategorizuje postavu a vie odhadnúť  či sedí do danej situácie alebo prostredia, v ktorom sa momentálne nachádza.  Preto základom je vychádzať zo známych konceptov, ktoré sa v rámci spoločnosti používajú už roky. V dnešnej dobe sa stretávajú dizajnéri s prekážkou, ktorá diktuje akúsi politicko-korektnú formu postáv, kde sa tieto stereotypy potláčajú. \cite{CharacterDesign:MPD}
 \subsection{Audiovizuálne spracovanie postáv}\label{3.0:3.1}
 V rámci audiovizuálnej tvorby spracovania hovoríme čisto o vizuálnom a zvukovom spracovaní postavy, teda ako na nás pôsobia ešte pred tým, než vykonajú akúkoľvek akciu v hernom svete. Tu pracujeme s relatívne veľkými skupinami a fyzickými prvkami postáv. Jednou z hlavných prvkov je atraktívnosť postáv, pretože sa oveľa rýchlejšie dá stotožniť s danou postavou a zväčša sa výrazné hlavne postavy idealizujú. Je aká si domnienka, že atraktívna postava musí byť kladná, avšak to vôbec nie je pravda, pretože o dojme postavy nerozhoduje všeobecný vzhľad, ale estetika, ktorá patrí medzi dôležité aspekty vizuálneho spracovania postav – do tejto skupiny zaradzujeme veci ako oblečenie, výbava, farebnosť celkovej postavy, kultúrne prvky (napr. tetovania) a iné. Všetky tieto prvky dotvárajú istú autentickosť postavám, avšak toto je len jedna skupina aspektov, ktoré môžeme meniť a využívať globálne. Poznáme aj konvencie, ktoré sa využívajú v špecifických prípadoch za účelom dosiahnutia istého dojmu. Výrazy tváre a držanie tela sú dôležitými a špecifickými aspektami, keď chcem, aby postava pôsobila milo a prívetivo využívame úsmevné výrazy tváre a uvoľnenú polohu tela. A opätovne keď chceme, aby postava pôsobila nepríjemne až nepriateľsky, minimalizujem očný kontakt a využívame chladný postoj aj výraz v tvári. To isté platí aj o zvukovej časti tvorby, kde využívame energetické a jemné tóniny hlasu na zvýraznenie kladných a dôležitých postáv a pri vytvorení nepriateľa či zápornej postavy využívame hrubý hlas so zníženou čistotou v hlase pre dramatický efekt. Samozrejme toto môžeme považovať za isté povahové črty, ktoré sa do určitej miery dajú obmieňať, ale podstata sa musí zachovať.
 Taktiež vieme prepojiť vizuál a povahu postavy pomocou fyzických prejavov, ktoré symbolizujú danú povahovú vlastnosť. Ako napr. pri dominantných postavách využívame častý očný kontakt, ktorý je nepretržitý, v rámci tela sa snažíme postave dať taký prirodzený postoj, kde vyzerá, že sa snaží zabrať čo najviac fyzického miesta a pri pohybe všetky pohyby sú konané v pokoji a chladne, čo evokuje pocit kontroly . 
 V rámci ošatenia či detailov vzhľadu ako napr. tvar očí, štýl účesov až ku oblečeniu, ktoré daná osoba nosí, je potrebné si vopred urobiť kultúrny prieskum spoločnosti, v ktorej sa daná postava bude vyskytovať. Celkový dojem je tvorený úplným vzhľadom zloženým zo všetkých týchto aspektov.
 \subsection{Povahové črty postáv}\label{3.0:3.2}
-V rámci charakterových (povahových) črtou pracujeme s viacerými historicko-kultúrnymi prvkami a vlastnosťami. Postava musí nadobudnúť isté vlastnosti na spektre, ktoré označujeme za spoločenskú vrstvu, teda zadávame vlastnosti zázemia danej postavy, ktoré samozrejme umožňuje herný svet. Do tohto aspektu radíme aj všeobecný pocit z danej postavy, teda vlastnosti ako priateľskosť, dominantnosť či všeobecná osobnosť sú veľmi špecifické a delikátne premenné, ktoré meníme a upravujeme. Rovnako tak silný vplyv má zaradenie do spoločenskej vrstvy, teda či postava pôsobí dostatočne dôveryhodne so svojím správaním do situácie či prostredia. Vychádza sa so štandardnej predpojatosti a predsudkov, ktoré sú prirodzené pre človeka. Teda keď si predstavíme určité zamestnanie či postavenie, hneď nám mozog vygeneruje akýsi vzor podľa, ktorého očakávame, že sa bude daná postava správať a presne toto musí byť využité – musíme naplniť očakávania hráčov. Avšak často sa odporúča pri hlavných nehráčskych postavách využiť tento aspekt aj opačne, teda nasilu potlačiť prvky stereotypu a tým zvýrazniť danú postavu. Samozrejme, že správne využitie je veľmi situačné a je dôležité vedieť, s čím všetkým môžeme pracovať. Veľa psychických a povahových vlastností vieme zapísať do obsiahleho diagramu.
+V rámci charakterových (povahových) črtou pracujeme s viacerými historicko-kultúrnymi prvkami a vlastnosťami. Postava musí nadobudnúť isté vlastnosti na spektre, ktoré označujeme za spoločenskú vrstvu\cite{CharacterDesign:MPD}, teda zadávame vlastnosti zázemia danej postavy, ktoré samozrejme umožňuje herný svet. Do tohto aspektu radíme aj všeobecný pocit z danej postavy, teda vlastnosti ako priateľskosť, dominantnosť či všeobecná osobnosť sú veľmi špecifické a delikátne premenné, ktoré meníme a upravujeme. Rovnako tak silný vplyv má zaradenie do spoločenskej vrstvy, teda či postava pôsobí dostatočne dôveryhodne so svojím správaním do situácie či prostredia. Vychádza sa so štandardnej predpojatosti a predsudkov, ktoré sú prirodzené pre človeka. Teda keď si predstavíme určité zamestnanie či postavenie, hneď nám mozog vygeneruje akýsi vzor podľa, ktorého očakávame, že sa bude daná postava správať a presne toto musí byť využité – musíme naplniť očakávania hráčov. Avšak často sa odporúča pri hlavných nehráčskych postavách využiť tento aspekt aj opačne, teda nasilu potlačiť prvky stereotypu a tým zvýrazniť danú postavu. Samozrejme, že správne využitie je veľmi situačné a je dôležité vedieť, s čím všetkým môžeme pracovať. Veľa psychických a povahových vlastností vieme zapísať do obsiahleho diagramu.
 \section{Postup vytvárania postáv}\label{4.0}
 Keď hovoríme o vytváraní postavy nehovoríme iba o tvorivom procese, ktorý má lineárnu postupnosť. Pri tvorení herných postáv je potrebné komunikovať s ostatnými, ktorý sa podieľajú na finálnom prevedení do hernej podoby. Ide o proces, kde sa stanovia potreby, pre danú postavu, teda prvý krok je zadať základné parametre pre postavu – hovoríme o pozadí, z ktorého pochádza, účelom postavy v príbehu, referenciu postavy, ktorá bude reprezentovaná digitálne, rola v príbehu, základné povahové vlastnosti.
-
-Niekedy treba uviesť zoznam:
-
-\begin{itemize}
-\item jedna vec
-\item druhá vec
-	\begin{itemize}
-	\item x
-	\item y
-	\end{itemize}
-\end{itemize}
-
-Ten istý zoznam, len číslovaný:
-
-\begin{enumerate}
-\item jedna vec
-\item druhá vec
-	\begin{enumerate}
-	\item x
-	\item y
-	\end{enumerate}
-\end{enumerate}
-
-
-\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
-
-\paragraph{Veľmi dôležitá poznámka.}
-Niekedy je potrebné nadpisom označiť odsek.\cite{Coplien:MPD} Text pokračuje hneď za nadpisom.
-
-
-
-\section{Dôležitá časť} \label{dolezita}
-
-
-
-
-\section{Ešte dôležitejšia časť} \label{dolezitejsia}
-
-
-
-
-\section{Záver} \label{zaver} % prípadne iný variant názvu
 
 
 
@@ -134,6 +82,7 @@ Niekedy je potrebné nadpisom označiť odsek.\cite{Coplien:MPD} Text pokračuje
 
 
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
+
 \bibliography{literatura}
 \bibliographystyle{abbrv} % prípadne alpha, abbrv alebo hociktorý iný
 \end{document}
